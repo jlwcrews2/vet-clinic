@@ -1,4 +1,4 @@
-package no.jlwcrews.Roomclinic.service;
+package no.jlwcrews.vetclinic.service;
 
 
 import no.jlwcrews.vetclinic.model.Room;
