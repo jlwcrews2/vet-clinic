@@ -18,6 +18,11 @@ public class AppointmentController {
         this.appointmentService = appointmentService;
     }
 
+    @PostMapping
+    public Appointment createAppointment(@RequestBody Appointment appointment){
+        return appointmentService.createAppointment(appointment);
+    }
+
     @GetMapping
     public List<Appointment> getAppointments(){
         return appointmentService.getAppointments();
