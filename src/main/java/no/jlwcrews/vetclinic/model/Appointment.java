@@ -41,6 +41,8 @@ public class Appointment {
     private Room room;
 
 
-
-
+    public Appointment(LocalDateTime appointmentDate, Long appointmentDuration) {
+        this.appointmentDate = appointmentDate;
+        this.appointmentDuration = appointmentDuration;
+    }
 }
