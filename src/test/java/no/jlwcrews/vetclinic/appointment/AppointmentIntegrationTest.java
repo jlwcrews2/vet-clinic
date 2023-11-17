@@ -17,5 +17,14 @@ public class AppointmentIntegrationTest {
     @Autowired
     MockMvc mockMvc;
 
+    @Test
+    void shouldFetchAppointments() throws Exception {
+        mockMvc.perform(get("/api/appointment"))
+                .andExpect(status().isOk())
+                .andDo(result -> {
+                    System.out.println(result.getResponse().getContentAsString());
+                });
+    }
+
 
 }
